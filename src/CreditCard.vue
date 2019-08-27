@@ -6,6 +6,7 @@
                     <Front :cardNumber="form.cardNumber"
                         :expiration="form.expiration"
                         :name="form.name"
+                        :label-string="initStrings"
                         :isTwoDigitsYear="isTwoDigitsYear"
                         :color="color">
                         <div slot="card-icon" id="ccsingle">
@@ -19,22 +20,22 @@
             </div>
             <div class="credit-card-form">
                 <div class="field">
-                    <label for="name">Name</label>
-                    <input maxlength="20"
+                    <label for="name">{{initStrings.name.label}}</label>
+                    <input 
                         name="name"
                         type="text"
-                        placeholder="Full Name"
+                        :placeholder="initStrings.name.placeholder"
                         v-model="form.name"
                         @focus="flipped = false">
                 </div>
                 <div class="field">
-                    <label for="card-number">Card Number</label>
+                    <label for="card-number">{{initStrings.cardNumber.label}}</label>
                     <input type="text"
                         name="card_number"
                         ref="cardNumber"
                         pattern="[0-9]*"
                         inputmode="numeric"
-                        placeholder="Card Number"
+                        :placeholder="initStrings.cardNumber.placeholder"
                         @focus="flipped = false">
                     <svg class="ccicon" width="750" height="471" viewBox="0 0 750 471" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <component :is="cardIcon"/>
@@ -42,7 +43,7 @@
                 </div>
                 <div class="field-group">
                     <div class="field">
-                        <label for="expirationdate">Expiration (mm/{{isTwoDigitsYear ? 'yy' : 'yyyy'}})</label>
+                        <label for="expirationdate">{{initStrings.expiration.label}} (mm/{{isTwoDigitsYear ? initStrings.year.label : initStrings.yearFull.label}})</label>
                         <input type="text"
                             name="expiration_date"
                             pattern="[0-9]*"
@@ -52,12 +53,12 @@
                             @focus="flipped = false">
                     </div>
                     <div class="field">
-                        <label for="securitycode">Security Code</label>
+                        <label for="securitycode">{{initStrings.securityCode.label}}</label>
                         <input type="text"
                             name="security_code"
                             ref="security"
                             pattern="[0-9]*"
-                            placeholder="Code"
+                            :placeholder="initStrings.cardNumber.placeholder"
                             inputmode="numeric"
                             @focus="flipped = true">
                     </div>
@@ -88,6 +89,33 @@ const masksDefaults = {
     securityCodeMask: null
 };
 
+const labelStringDefault = {
+    name : {
+        label : 'Name',
+        placeholder : 'Full name'
+    },
+    cardNumber : {
+        label : 'Card',
+        placeholder : 'Number card',
+        imageText : 'card number'
+    },
+    expiration : {
+        label : 'Expiration',
+        placeholder : '',
+        imageText : 'expiration'
+    },
+    year : {
+        label : 'yy'
+    },
+    yearFull : {
+        label : 'yyyy'
+    },
+    securityCode : {
+        label : 'Security code',
+        placeholder : 'Code'
+    }
+}
+
 const defaultColor = 'grey';
 
 // Source reference: https://codepen.io/quinlo/pen/YONMEa
@@ -114,6 +142,16 @@ export default {
             validator(value) {
                 return [2, 4].includes(value)
             }
+        },
+        labelString : {
+            type : Object,
+            default : () => {
+                return {}
+            }
+        },
+        hideSecurityCode : {
+            type : Boolean,
+            default : false
         }
     },
     mounted() {
@@ -127,7 +165,7 @@ export default {
             cardInnerIcon: null,
             color: 'grey',
             masks: masksDefaults,
-            form: formDefaults
+            form: formDefaults,
         };
     },
     methods: {
@@ -175,6 +213,9 @@ export default {
         }
     },
     computed: {
+        initStrings() {
+            return Object.assign(labelStringDefault, this.labelString);
+        },
         isTwoDigitsYear() {
             return this.yearDigits === 2;
         },
@@ -222,25 +263,25 @@ export default {
                 display: flex;
 
                 .field:first-child {
-                    margin-right: 10px;
+                    margin-right: 5px;
                 }
             }
 
             .field {
                 position: relative;
                 width: 100%;
-                margin: 10px 0;
+                margin: 5px 0;
 
                 label {
                     padding-bottom: 5px;
-                    font-size: 13px;
+                    font-size: 12px;
                 }
 
                 input {
                     box-sizing: border-box;
                     margin-top: 3px;
-                    padding: 15px;
-                    font-size: 16px;
+                    padding: 10px;
+                    font-size: 14px;
                     width: 100%;
                     border-radius: 3px;
                     border: 1px solid #dcdcdc;
@@ -250,11 +291,11 @@ export default {
     }
 
     .ccicon {
-        height: 38px;
+        height: 22px;
         position: absolute;
-        right: 6px;
-        top: calc(50% - 9px);
-        width: 60px;
+        right: 3px;
+        top: calc(50% - 1px);
+        width: 40px;
     }
 
     .credit-card-image {
@@ -388,6 +429,7 @@ export default {
 
     #svgname {
         text-transform: uppercase;
+        overflow: hidden;
     }
 
     #cardfront {
