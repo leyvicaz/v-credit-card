@@ -15,6 +15,7 @@
                     </Front>
                     <Back :nameBack="form.name"
                         :security="form.security"
+                        :hideCode="hideSecurityCodeImage"
                         :color="color"/>
                 </div>
             </div>
@@ -54,7 +55,7 @@
                     </div>
                     <div class="field">
                         <label for="securitycode">{{initStrings.securityCode.label}}</label>
-                        <input type="text"
+                        <input :type="hideSecurityCodeInput ? 'password' : 'text'"
                             name="security_code"
                             ref="security"
                             pattern="[0-9]*"
@@ -149,7 +150,11 @@ export default {
                 return {}
             }
         },
-        hideSecurityCode : {
+        hideSecurityCodeInput : {
+            type : Boolean,
+            default : false
+        },
+        hideSecurityCodeImage : {
             type : Boolean,
             default : false
         }
