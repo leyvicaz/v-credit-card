@@ -59,7 +59,7 @@
                             name="security_code"
                             ref="security"
                             pattern="[0-9]*"
-                            :placeholder="initStrings.cardNumber.placeholder"
+                            :placeholder="initStrings.securityCode.placeholder"
                             inputmode="numeric"
                             @focus="flipped = true">
                     </div>
