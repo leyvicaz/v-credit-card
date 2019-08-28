@@ -4428,12 +4428,12 @@ if (typeof window !== 'undefined') {
 // Indicate to webpack that this file can be concatenated
 /* harmony default export */ var setPublicPath = (null);
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"49d97f64-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/CreditCard.vue?vue&type=template&id=b2228752&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"vue-credit-card",class:_vm.className},[_c('div',{staticClass:"card-form-and-image",style:({flexDirection: _vm.direction})},[(!_vm.noCard)?_c('div',{staticClass:"credit-card-image"},[_c('div',{staticClass:"creditcard",class:{flipped: _vm.flipped},on:{"click":function($event){_vm.flipped = !_vm.flipped}}},[_c('Front',{attrs:{"cardNumber":_vm.form.cardNumber,"expiration":_vm.form.expiration,"name":_vm.form.name,"label-string":_vm.initStrings,"isTwoDigitsYear":_vm.isTwoDigitsYear,"color":_vm.color}},[_c('div',{attrs:{"slot":"card-icon","id":"ccsingle"},slot:"card-icon"},[_c(_vm.cardInnerIcon,{tag:"component"})],1)]),_c('Back',{attrs:{"nameBack":_vm.form.name,"security":_vm.form.security,"color":_vm.color}})],1)]):_vm._e(),_c('div',{staticClass:"credit-card-form"},[_c('div',{staticClass:"field"},[_c('label',{attrs:{"for":"name"}},[_vm._v(_vm._s(_vm.initStrings.name.label))]),_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.form.name),expression:"form.name"}],attrs:{"name":"name","type":"text","placeholder":_vm.initStrings.name.placeholder},domProps:{"value":(_vm.form.name)},on:{"focus":function($event){_vm.flipped = false},"input":function($event){if($event.target.composing){ return; }_vm.$set(_vm.form, "name", $event.target.value)}}})]),_c('div',{staticClass:"field"},[_c('label',{attrs:{"for":"card-number"}},[_vm._v(_vm._s(_vm.initStrings.cardNumber.label))]),_c('input',{ref:"cardNumber",attrs:{"type":"text","name":"card_number","pattern":"[0-9]*","inputmode":"numeric","placeholder":_vm.initStrings.cardNumber.placeholder},on:{"focus":function($event){_vm.flipped = false}}}),_c('svg',{staticClass:"ccicon",attrs:{"width":"750","height":"471","viewBox":"0 0 750 471","version":"1.1","xmlns":"http://www.w3.org/2000/svg","xmlns:xlink":"http://www.w3.org/1999/xlink"}},[_c(_vm.cardIcon,{tag:"component"})],1)]),_c('div',{staticClass:"field-group"},[_c('div',{staticClass:"field"},[_c('label',{attrs:{"for":"expirationdate"}},[_vm._v(_vm._s(_vm.initStrings.expiration.label)+" (mm/"+_vm._s(_vm.isTwoDigitsYear ? _vm.initStrings.year.label : _vm.initStrings.yearFull.label)+")")]),_c('input',{ref:"expiration",attrs:{"type":"text","name":"expiration_date","pattern":"[0-9]*","placeholder":_vm.isTwoDigitsYear ? 'MM/YY' : 'MM/YYYY',"inputmode":"numeric"},on:{"focus":function($event){_vm.flipped = false}}})]),_c('div',{staticClass:"field"},[_c('label',{attrs:{"for":"securitycode"}},[_vm._v(_vm._s(_vm.initStrings.securityCode.label))]),_c('input',{ref:"security",attrs:{"type":"text","name":"security_code","pattern":"[0-9]*","placeholder":_vm.initStrings.cardNumber.placeholder,"inputmode":"numeric"},on:{"focus":function($event){_vm.flipped = true}}})])])])])])}
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"49d97f64-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/CreditCard.vue?vue&type=template&id=32246148&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"vue-credit-card",class:_vm.className},[_c('div',{staticClass:"card-form-and-image",style:({flexDirection: _vm.direction})},[(!_vm.noCard)?_c('div',{staticClass:"credit-card-image"},[_c('div',{staticClass:"creditcard",class:{flipped: _vm.flipped},on:{"click":function($event){_vm.flipped = !_vm.flipped}}},[_c('Front',{attrs:{"cardNumber":_vm.form.cardNumber,"expiration":_vm.form.expiration,"name":_vm.form.name,"label-string":_vm.initStrings,"isTwoDigitsYear":_vm.isTwoDigitsYear,"color":_vm.color}},[_c('div',{attrs:{"slot":"card-icon","id":"ccsingle"},slot:"card-icon"},[_c(_vm.cardInnerIcon,{tag:"component"})],1)]),_c('Back',{attrs:{"nameBack":_vm.form.name,"security":_vm.form.security,"hideCode":_vm.hideSecurityCodeImage,"color":_vm.color}})],1)]):_vm._e(),_c('div',{staticClass:"credit-card-form"},[_c('div',{staticClass:"field"},[_c('label',{attrs:{"for":"name"}},[_vm._v(_vm._s(_vm.initStrings.name.label))]),_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.form.name),expression:"form.name"}],attrs:{"name":"name","type":"text","placeholder":_vm.initStrings.name.placeholder},domProps:{"value":(_vm.form.name)},on:{"focus":function($event){_vm.flipped = false},"input":function($event){if($event.target.composing){ return; }_vm.$set(_vm.form, "name", $event.target.value)}}})]),_c('div',{staticClass:"field"},[_c('label',{attrs:{"for":"card-number"}},[_vm._v(_vm._s(_vm.initStrings.cardNumber.label))]),_c('input',{ref:"cardNumber",attrs:{"type":"text","name":"card_number","pattern":"[0-9]*","inputmode":"numeric","placeholder":_vm.initStrings.cardNumber.placeholder},on:{"focus":function($event){_vm.flipped = false}}}),_c('svg',{staticClass:"ccicon",attrs:{"width":"750","height":"471","viewBox":"0 0 750 471","version":"1.1","xmlns":"http://www.w3.org/2000/svg","xmlns:xlink":"http://www.w3.org/1999/xlink"}},[_c(_vm.cardIcon,{tag:"component"})],1)]),_c('div',{staticClass:"field-group"},[_c('div',{staticClass:"field"},[_c('label',{attrs:{"for":"expirationdate"}},[_vm._v(_vm._s(_vm.initStrings.expiration.label)+" (mm/"+_vm._s(_vm.isTwoDigitsYear ? _vm.initStrings.year.label : _vm.initStrings.yearFull.label)+")")]),_c('input',{ref:"expiration",attrs:{"type":"text","name":"expiration_date","pattern":"[0-9]*","placeholder":_vm.isTwoDigitsYear ? 'MM/YY' : 'MM/YYYY',"inputmode":"numeric"},on:{"focus":function($event){_vm.flipped = false}}})]),_c('div',{staticClass:"field"},[_c('label',{attrs:{"for":"securitycode"}},[_vm._v(_vm._s(_vm.initStrings.securityCode.label))]),_c('input',{ref:"security",attrs:{"type":_vm.hideSecurityCodeInput ? 'password' : 'text',"name":"security_code","pattern":"[0-9]*","placeholder":_vm.initStrings.cardNumber.placeholder,"inputmode":"numeric"},on:{"focus":function($event){_vm.flipped = true}}})])])])])])}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/CreditCard.vue?vue&type=template&id=b2228752&
+// CONCATENATED MODULE: ./src/CreditCard.vue?vue&type=template&id=32246148&
 
 // EXTERNAL MODULE: ./node_modules/imask/dist/imask.js
 var imask = __webpack_require__("09c6");
@@ -4823,12 +4823,12 @@ var component = normalizeComponent(
 )
 
 /* harmony default export */ var Front = (component.exports);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"49d97f64-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/cards/Back.vue?vue&type=template&id=82c845a0&
-var Backvue_type_template_id_82c845a0_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"back"},[_c('svg',{staticStyle:{"enable-background":"new 0 0 750 471"},attrs:{"version":"1.1","id":"cardback","xmlns":"http://www.w3.org/2000/svg","xmlns:xlink":"http://www.w3.org/1999/xlink","x":"0px","y":"0px","viewBox":"0 0 750 471","xml:space":"preserve"}},[_c('g',{attrs:{"id":"Front"}},[_c('line',{staticClass:"st0",attrs:{"x1":"35.3","y1":"10.4","x2":"36.7","y2":"11"}})]),_c('g',{attrs:{"id":"Back"}},[_c('g',{attrs:{"id":"Page-1_2_"}},[_c('g',{attrs:{"id":"amex_2_"}},[_c('path',{staticClass:"darkcolor",class:(_vm.color + "dark"),attrs:{"id":"Rectangle-1_2_","d":"M40,0h670c22.1,0,40,17.9,40,40v391c0,22.1-17.9,40-40,40H40c-22.1,0-40-17.9-40-40V40C0,17.9,17.9,0,40,0z"}})])]),_c('rect',{staticClass:"st2",attrs:{"y":"61.6","width":"750","height":"78"}}),_c('g',[_c('path',{staticClass:"st3",attrs:{"d":"M701.1,249.1H48.9c-3.3,0-6-2.7-6-6v-52.5c0-3.3,2.7-6,6-6h652.1c3.3,0,6,2.7,6,6v52.5C707.1,246.4,704.4,249.1,701.1,249.1z"}}),_c('rect',{staticClass:"st4",attrs:{"x":"42.9","y":"198.6","width":"664.1","height":"10.5"}}),_c('rect',{staticClass:"st4",attrs:{"x":"42.9","y":"224.5","width":"664.1","height":"10.5"}}),_c('path',{staticClass:"st5",attrs:{"d":"M701.1,184.6H618h-8h-10v64.5h10h8h83.1c3.3,0,6-2.7,6-6v-52.5C707.1,187.3,704.4,184.6,701.1,184.6z"}})]),_c('text',{staticClass:"st6 st7",attrs:{"transform":"matrix(1 0 0 1 621.999 227.2734)","id":"svgsecurity"}},[_vm._v(_vm._s(_vm.security))]),_c('g',{staticClass:"st8"},[_c('text',{staticClass:"st9 st6 st10",attrs:{"transform":"matrix(1 0 0 1 518.083 280.0879)"}},[_vm._v(_vm._s(_vm.labelString.securityCode.label))])]),_c('rect',{staticClass:"st11",attrs:{"x":"58.1","y":"378.6","width":"375.5","height":"13.5"}}),_c('rect',{staticClass:"st11",attrs:{"x":"58.1","y":"405.6","width":"421.7","height":"13.5"}}),_c('text',{staticClass:"st12 st13",attrs:{"transform":"matrix(1 0 0 1 59.5073 228.6099)","id":"svgnameback"}},[_vm._v(_vm._s(_vm.nameBack))])])])])}
-var Backvue_type_template_id_82c845a0_staticRenderFns = []
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"49d97f64-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/cards/Back.vue?vue&type=template&id=30c408f2&
+var Backvue_type_template_id_30c408f2_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"back"},[_c('svg',{staticStyle:{"enable-background":"new 0 0 750 471"},attrs:{"version":"1.1","id":"cardback","xmlns":"http://www.w3.org/2000/svg","xmlns:xlink":"http://www.w3.org/1999/xlink","x":"0px","y":"0px","viewBox":"0 0 750 471","xml:space":"preserve"}},[_c('g',{attrs:{"id":"Front"}},[_c('line',{staticClass:"st0",attrs:{"x1":"35.3","y1":"10.4","x2":"36.7","y2":"11"}})]),_c('g',{attrs:{"id":"Back"}},[_c('g',{attrs:{"id":"Page-1_2_"}},[_c('g',{attrs:{"id":"amex_2_"}},[_c('path',{staticClass:"darkcolor",class:(_vm.color + "dark"),attrs:{"id":"Rectangle-1_2_","d":"M40,0h670c22.1,0,40,17.9,40,40v391c0,22.1-17.9,40-40,40H40c-22.1,0-40-17.9-40-40V40C0,17.9,17.9,0,40,0z"}})])]),_c('rect',{staticClass:"st2",attrs:{"y":"61.6","width":"750","height":"78"}}),_c('g',[_c('path',{staticClass:"st3",attrs:{"d":"M701.1,249.1H48.9c-3.3,0-6-2.7-6-6v-52.5c0-3.3,2.7-6,6-6h652.1c3.3,0,6,2.7,6,6v52.5C707.1,246.4,704.4,249.1,701.1,249.1z"}}),_c('rect',{staticClass:"st4",attrs:{"x":"42.9","y":"198.6","width":"664.1","height":"10.5"}}),_c('rect',{staticClass:"st4",attrs:{"x":"42.9","y":"224.5","width":"664.1","height":"10.5"}}),_c('path',{staticClass:"st5",attrs:{"d":"M701.1,184.6H618h-8h-10v64.5h10h8h83.1c3.3,0,6-2.7,6-6v-52.5C707.1,187.3,704.4,184.6,701.1,184.6z"}})]),_c('text',{staticClass:"st6 st7",attrs:{"transform":"matrix(1 0 0 1 621.999 227.2734)","id":"svgsecurity"}},[_vm._v(_vm._s(_vm.hideCode ? _vm.hideStrign() : _vm.security))]),_c('g',{staticClass:"st8"},[_c('text',{staticClass:"st9 st6 st10",attrs:{"transform":"matrix(1 0 0 1 518.083 280.0879)"}},[_vm._v(_vm._s(_vm.labelString.securityCode.label))])]),_c('rect',{staticClass:"st11",attrs:{"x":"58.1","y":"378.6","width":"375.5","height":"13.5"}}),_c('rect',{staticClass:"st11",attrs:{"x":"58.1","y":"405.6","width":"421.7","height":"13.5"}}),_c('text',{staticClass:"st12 st13",attrs:{"transform":"matrix(1 0 0 1 59.5073 228.6099)","id":"svgnameback"}},[_vm._v(_vm._s(_vm.nameBack))])])])])}
+var Backvue_type_template_id_30c408f2_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/cards/Back.vue?vue&type=template&id=82c845a0&
+// CONCATENATED MODULE: ./src/components/cards/Back.vue?vue&type=template&id=30c408f2&
 
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/cards/Back.vue?vue&type=script&lang=js&
 //
@@ -4886,6 +4886,15 @@ var Backvue_type_template_id_82c845a0_staticRenderFns = []
           }
         };
       }
+    },
+    hideCode: {
+      type: Boolean,
+      default: false
+    }
+  },
+  methods: {
+    hideStrign: function hideStrign() {
+      return this.security.replace(/./g, '*');
     }
   }
 });
@@ -4901,8 +4910,8 @@ var Backvue_type_template_id_82c845a0_staticRenderFns = []
 
 var Back_component = normalizeComponent(
   cards_Backvue_type_script_lang_js_,
-  Backvue_type_template_id_82c845a0_render,
-  Backvue_type_template_id_82c845a0_staticRenderFns,
+  Backvue_type_template_id_30c408f2_render,
+  Backvue_type_template_id_30c408f2_staticRenderFns,
   false,
   null,
   null,
@@ -5422,6 +5431,7 @@ var singles_Visa_component = normalizeComponent(
 //
 //
 //
+//
 
 
 
@@ -5497,7 +5507,11 @@ var defaultColor = 'grey'; // Source reference: https://codepen.io/quinlo/pen/YO
         return {};
       }
     },
-    hideSecurityCode: {
+    hideSecurityCodeInput: {
+      type: Boolean,
+      default: false
+    },
+    hideSecurityCodeImage: {
       type: Boolean,
       default: false
     }
