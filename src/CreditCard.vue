@@ -15,6 +15,7 @@
                     </Front>
                     <Back :nameBack="form.name"
                         :security="form.security"
+                        :label-string="initStrings"
                         :hideCode="hideSecurityCodeImage"
                         :color="color"/>
                 </div>
