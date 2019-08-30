@@ -45,12 +45,12 @@
                 </div>
                 <div class="field-group">
                     <div class="field">
-                        <label for="expirationdate">{{initStrings.expiration.label}} (mm/{{isTwoDigitsYear ? initStrings.year.label : initStrings.yearFull.label}})</label>
+                        <label for="expirationdate">{{initStrings.expiration.label}} {{placeHolderExpiration.toLowerCase()}}</label>
                         <input type="text"
                             name="expiration_date"
                             pattern="[0-9]*"
                             ref="expiration"
-                            :placeholder="isTwoDigitsYear ? 'MM/YY' : 'MM/YYYY'"
+                            :placeholder="placeHolderExpiration"
                             inputmode="numeric"
                             @focus="flipped = false">
                     </div>
@@ -105,6 +105,9 @@ const labelStringDefault = {
         label : 'Expiration',
         placeholder : '',
         imageText : 'expiration'
+    },
+    month : {
+        label : 'mm'
     },
     year : {
         label : 'yy'
@@ -227,6 +230,10 @@ export default {
         },
         fields() {
             return [this.form.name, this.form.cardNumber, this.form.expiration, this.form.security].join('');
+        },
+        placeHolderExpiration(){
+            let text = this.initStrings.month.label+'/'+(this.isTwoDigitsYear ? this.initStrings.year.label : this.initStrings.yearFull.label);
+            return text.toUpperCase();
         }
     },
     watch: {
